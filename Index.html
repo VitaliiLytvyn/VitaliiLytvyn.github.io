@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="content_1">
+            <h1>COCOMO Калькулятор</h1>
+            <form class="form">
+                <div class="radio">
+                    Тип проекту:
+                    <br>
+                    <label for="projectType1">Organic</label>
+                    <input type="radio" id="projectType1" name="project" value="Organic" checked>
+                    <br>
+                    <label for="projectType2">Semidetached</label>
+                    <input type="radio" id="projectType2" name="project" value="Semidetached">
+                    <br>
+                    <label for="projectType3">Embedded</label>
+                    <input type="radio" id="projectType3" name="project" value="Embedded">
+                    <br>
+                </div>
+                <label for="linesOfCode">Кількість рядків коду</label>
+                <input type="text" name="linesOfCode" id="linesOfCode">
+                <br>
+            </form>
+            <button onclick="start()">Розрахувати</button>
+        </div>
+        <div class="content_2">
+            <div class="effort">
+                Трудоємність:
+                <div class="efforts_result"></div>
+            </div>
+            <div class="timeToDevelop">
+                Термін розробки:
+                <div class="timeToDevelop_result"></div>
+            </div>
+            <div class="personsToDevelop">
+                Число необхідних розробників:
+                <div class="personsToDevelop_result"></div>
+            </div>
+        </div>
+    </div>
+    <script src='js/script.js'></script>
+</body>
+</html>
